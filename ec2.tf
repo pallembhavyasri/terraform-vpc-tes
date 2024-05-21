@@ -1,5 +1,3 @@
-module "ec2-test"{
+module "vpc-test"{
     source = "../terraform-aws-vpc"
     }
-
-}
