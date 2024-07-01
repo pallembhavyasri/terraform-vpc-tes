@@ -3,5 +3,10 @@ output "avalibility_zone_info"{
 }
 
 output "vpc_id"{
-    value = aws_vpc.main.id
+    value = module.vpc-test.vpc_id
 }
+
+output "public_subnet_list" {
+  value = module.vpc-test.public_subnet_ids
+}
+
